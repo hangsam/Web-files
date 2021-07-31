@@ -1,0 +1,174 @@
+/* Importing the fonts from google fonts website*/
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+/* removing the unnecessary styles from elements*/
+*{
+	margin:0;
+	padding: 0;
+	border: none;
+	background: :none;
+	outline: none;
+	box-shadow: none;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+    position: relative;
+}
+/* For clear fixing the overflow */
+*::after, *::before {
+  content: "";
+  display: table;
+  clear: both;
+}
+a,button,input[type="submit"],input[type="reset"]{
+	cursor:pointer;
+	transition: 0.22s ease;
+	color: #363636;
+}
+input[type="submit"],input[type="reset"]{
+	border:none;
+	text-shadow:none;
+	font-size: 16px !important;
+	font-family: 'Poppins', sans-serif;
+}
+hr{
+	border: 0;
+	height: 0;
+	margin: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid rgba(250, 250, 250, 0.3);
+}
+input,textarea{
+	display: block;
+	float: left;
+	height: 40px;
+	width: 100%;
+	border: 1px solid #e6e6e6;
+	border-radius: 2px;
+	background: #f6f6f6;
+	color: #444444;
+	padding: 0 12px;
+	margin: 0;
+}
+textarea{
+	padding: 12px;
+	height: 250px;
+	resize: none;
+}
+input:focus{ outline: none; }
+
+html,body{
+	height: 100%;
+	width: 100%;
+	overflow:hidden;
+}
+
+/*using the desired background-color,font-color, fonts-family and font-size*/
+body{
+	font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	background: #f1f2f3;
+	color: black;
+	overflow-y: auto;
+}
+.has-shadow{ box-shadow: 0 0 0.5px 0.5px #ccc; }
+.bg-red{ background-color:#F76C6C; }
+.fg-red{ color:#F76C6C; }
+.bg-blue{ background-color:#24305E; }
+.fg-blue{ color:#24305E; }
+
+ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+li{
+	display:block;
+}
+
+/* CSS for articles*/
+.is-article{
+	width: 100%;
+	height: auto;
+	background: #ffffff;
+	box-shadow: 0 0 0.5px 0.5px #E6E6E6;
+	margin: 0 0 0 0;
+	padding: 0;
+	border-radius: 1px;
+}
+.is-article > .is-header, .is-article > .is-footer{
+	display:block;
+	background: #fafafa;
+	width: 100%;
+	padding: 12px 18px;
+	height: auto;
+	box-shadow: 0 0 0.6px 0.6px #E6E6E6;
+}
+.is-article > .is-content{
+	display:block;
+	width: 100%;
+	padding: 18px;
+}
+
+
+/* declearing the major classes for the website */
+.outer-container{
+	width: 100%;
+	height: auto;
+	margin: auto;
+}
+.inner-container{
+	width: 1280px;
+	margin: auto;
+}
+.button{
+	display: inline-block;
+	padding: 0 12px;
+	height: 40px;
+	line-height: 40px;
+	color: #363636;
+	border-radius: 2px;
+	margin: 0 6px;
+}
+.button:hover{
+	color: #1389fd;
+}
+.button.is-solid{
+	background: #1389fd;
+	color: #fff;
+}
+.button.is-solid:hover{
+	-webkit-filter: saturate(84%);
+	filter: saturate(84%);
+}
+.is-card{
+	background: #ffffff;
+	box-shadow: 0 0 0.5px 0.5px #D6D6D6;
+	border-radius: 1px;
+}
+.has-border-radius{
+	border-radius: 4px;
+	overflow:hidden;
+}
+.has-inner-gap{ padding: 12px; }
+.remove-inner-gap{ padding: 0 !important; }
+.has-margin-top{ margin-top: 10px; }
+.has-margin-bottom{ margin-bottom: 12px; }
+.has-outer-gap{ margin: 12px; }
+.remove-outer-gap{ margin: 0 !important; }
+.to-left{ float:left; }
+.to-right{ float:right; }
+.is-active{ color: #1389fd;}
+
+.is-sticky{
+	position:sticky;
+	top:0;
+	z-index:100; 
+}
+
+/* CSS for image tag*/
+img{
+	display: block;
+	position: relative;
+	width: 50%;
+}

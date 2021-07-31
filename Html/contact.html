@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact</title>
+		<meta name="description" content="Contact page of this website">
+		<meta name="keywords" content="HTML,CSS,JavaScript, Contact">
+		<meta name="author" content="Samsuhang Nembang">
+
+		
+		<link rel="stylesheet" href="../css/main.css"/>
+		<script src="../js/script.js"></script>
+		<style>
+		.mapouter{
+			position:relative;
+			text-align:right;
+			height:500px;
+			width:100%;
+			background: #F1F1F1;
+		}
+		.gmap_canvas{
+			overflow:hidden;
+			background:none!important;
+			height:500px;
+			width:100%;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="outer-container is-card has-inner-gap is-sticky">
+			<div class="inner-container">
+				<div class="to-left">
+					<h3 class="cursive-text fg-red">Samsuhang Nembang</h3>
+				</div>
+				<div class="to-right">
+					<a href="index.html" class="button">Home</a>
+					<a href="blog.html" class="button">Blogs</a>
+					<a href="research.html" class="button">Research</a>
+					<a href="" class="button is-active">Contact</a>
+					<a href="portfolio.html" class="button is-solid">Portfolio</a>
+				</div>
+			</div>
+		</div>
+		<div class="outer-container has-inner-gap">
+			<div class="inner-container is-article has-inner-gap">
+				<h1>Message Me</h1>
+				<h5 id="error-msg" class="fg-red"></h5>
+				<form onsubmit="return checkValidation()" name="contactForm" method="POST">
+					<div class="row has-gap has-margin-top">
+						<div class="col">
+							<small>First Name</small>
+							<input type="text" placeholder="Firstname" name="firstname" required>
+						</div>
+						<div class="col">
+							<small>Last Name</small>
+							<input type="text" placeholder="lastname" name="lastname" required>
+						</div>
+					</div>
+					<div class="row has-gap has-margin-top">
+						<div class="col">
+							<small>Email</small>
+							<input type="email" placeholder="Email" name="email"required>
+						</div>
+						<div class="col">
+							<small>Phone</small>
+							<input type="text" placeholder="Phone" name="phone" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-10 has-margin-top">
+							<small>Address</small>
+							<input type="text" placeholder="Primary Address" name="address" required>
+						</div>
+						<div class="col-10 has-margin-top">
+							<input type="text" placeholder="Secondary Address" required>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-10 has-margin-top">
+							<small>Message</small>
+							<textarea type="text" placeholder="Hey, Samsuhang Nembang ..." name="message"></textarea>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-10 has-margin-top has-margin-bottom">
+							<input class="button is-solid to-right" style="width: 150px; margin:0;" type="submit" value="Send"/>
+							<input class="button is-solid to-right" style="width: 150px; background: #ff3333;" type="reset" value="Clear"/>
+						</div>
+					</div>
+				</form>
+				
+				<br/><br/><hr/><br/>
+				<h1>Find me on</h1>
+				<div class="row has-gap">
+					<div class="col">
+						<a href="https://www.facebook.com">
+							<img class="has-border-radius" src="../images/facebook.jpg">
+							<h4>Facebook</h4>
+						</a>
+					</div>
+					<div class="col">
+						<a href="https://www.instagram.com">
+							<img class="has-border-radius" src="../images/instagram.jpg">
+							<h4>Instagram</h4>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Footer container -->
+		<div class="outer-container">
+			<div class="inner-container" style="text-align:center;">
+				&copy;<script>getDate()</script> Samsuhang Nembang
+			</div>
+		</div>
+	</body>
+</html>
